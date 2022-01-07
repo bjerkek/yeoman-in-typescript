@@ -5,7 +5,7 @@ export interface Answers {
   name?: string;
 }
 
-export class AWLGenerator extends Generator {
+module.exports = class AWLGenerator extends Generator {
 
   #answers: Answers = {};
 

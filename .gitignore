@@ -1,7 +1,3 @@
-node_modules/
-bower_components/
-generators/
-*.log
-
-build/
-dist/
+.idea
+/node_modules
+/generators
