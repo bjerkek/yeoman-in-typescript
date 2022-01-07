@@ -3,6 +3,7 @@ import yosay from 'yosay';
 
 export interface Answers {
   name?: string;
+  title?: string;
 }
 
 module.exports = class AWLGenerator extends Generator {
@@ -25,14 +26,22 @@ module.exports = class AWLGenerator extends Generator {
         message: "Your project name",
       },
       {
-        type: "confirm",
-        name: "cool",
-        message: "Would you like to enable the Cool feature?"
+        type: "input",
+        name: "title",
+        message: "Page title",
       }
     ]);
   }
 
+  async writing(): Promise<void> {
+    this.fs.copyTpl(
+      this.templatePath('index.html'),
+      this.destinationPath(`${this.#answers.name}/index.html`),
+      { title: this.#answers.title }
+    );
+  }
+
   async install(): Promise<void> {
-    this.log(`Nice, we you later ${this.#answers.name}.`)
+    this.log('Nice, we you later.')
   }
 }
