@@ -42,6 +42,6 @@ module.exports = class AWLGenerator extends Generator {
   }
 
   async install(): Promise<void> {
-    this.log('Nice, we you later.')
+    this.log('Nice, see you later.')
   }
 }

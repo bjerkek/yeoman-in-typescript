@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf generators && tsc -b && npm run copy-files",
     "watch": "rimraf generators && tsc-watch && npm run copy-files",
-    "copy-files": "cp -R ./src/app/filegroups/ ./generators/ && cp -R ./src/app/templates/ ./generators/",
+    "copy-files": "cp -R ./src/app/templates/ ./generators/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bjerkek AS",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/yeoman-generator": "5.2.8",
     "@types/yosay": "2.0.1",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "tsc-watch": "4.6.0"
   }
 }
