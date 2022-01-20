@@ -12,5 +12,5 @@ yo foo
 ## Tips'n trix
 If you publish this library to npm you could run this generator with installing either yo or the generator like this...
 ```console
-npx --package yo --package generator-foo -- yo awl
+npx --package yo --package generator-foo -- yo foo
 ```
