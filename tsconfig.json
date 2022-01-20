@@ -3,7 +3,7 @@
     "target": "ES6",
     "module": "commonjs",
     "esModuleInterop": true,
-    "outDir": "generators",
+    "outDir": "generators/app",
     "strict": true,
   },
   "include": ["src"],
