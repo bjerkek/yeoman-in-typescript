@@ -1,5 +1,5 @@
-import Generator, {GeneratorOptions} from 'yeoman-generator';
-import yosay from 'yosay';
+import Generator = require('yeoman-generator');
+import yosay = require('yosay');
 
 export interface Answers {
   name?: string;
@@ -10,7 +10,7 @@ module.exports = class AWLGenerator extends Generator {
 
   #answers: Answers = {};
 
-  constructor(args: string | string[], opts: GeneratorOptions) {
+  constructor(args: string | string[], opts: Generator.GeneratorOptions) {
     super(args, opts);
   }
 

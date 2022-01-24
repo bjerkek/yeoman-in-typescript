@@ -1,7 +1,7 @@
 # A Yeoman generator in Typescript
 A bare bone Yeoman generator written in typescript
 
-## How to test locally
+## How to test run the generator locally
 ```console
 cd yeoman-in-typescript
 npm i
@@ -10,7 +10,7 @@ yo foo
 ```
 
 ## Tips'n trix
-If you publish this library to npm you could run this generator with installing either yo or the generator like this...
+If you publish this library to npm you could run this generator without installing either yo or the generator using npx like this...
 ```console
 npx --package yo --package @bjerkek/generator-foo -- yo @bjerkek/foo
 ```

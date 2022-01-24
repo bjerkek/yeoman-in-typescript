@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ESNext",
     "module": "commonjs",
-    "esModuleInterop": true,
     "outDir": "generators/app",
+    "resolveJsonModule": true,
     "strict": true,
   },
   "include": ["src"],
   "exclude": [
     "node_modules",
+    "src/app/templates"
   ]
 }
