@@ -1,5 +1,5 @@
 # A Yeoman generator in Typescript
-A bare bone Yeoman generator written in typescript
+A Yeoman generator written in typescript.
 
 ## How to test run the generator locally
 ```console
