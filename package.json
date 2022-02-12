@@ -1,6 +1,6 @@
 {
   "name": "@bjerkek/generator-foo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generator for Foo",
   "main": "generators/app/index.js",
   "scripts": {

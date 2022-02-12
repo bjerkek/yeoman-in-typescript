@@ -12,5 +12,9 @@ yo foo
 ## Tips'n trix
 If you publish this library to npm you could run this generator without installing either yo or the generator using npx like this...
 ```console
-npx --package yo --package @bjerkek/generator-foo -- yo @bjerkek/foo
+npx --package yo --package @bjerkek/generator-foo@latest -- yo @bjerkek/foo
 ```
+
+--no 
+
+npx 
